@@ -1,0 +1,321 @@
+body{
+	position: relative;
+}
+*{
+	margin: 0;padding: 0;
+}
+.jiantou img{
+	position: absolute;
+    width: 11%;
+    left: 44%;
+    bottom: 0;
+    z-index: 100;
+    animation: ru 1.5s linear infinite;
+}
+@-webkit-keyframes ru{
+	from{bottom: 1%;opacity: 1;}
+	to{bottom: 6%;opacity: 0.1;}
+}
+.music img{
+	position: absolute;
+    width: 10%;
+    left: 85%;
+    bottom: 38%;
+    z-index: 100;
+    animation: rot 2s linear infinite;
+}
+.swiper-slide{
+	position: relative;
+	overflow: hidden;
+}
+.silder1{
+	background: url(../img/pic4.png);
+	background-size: 100% 100%;
+	text-align: center;
+}
+.silder1 .logo{
+	position: absolute;
+	width: 26%;
+    left: 6%;
+    top: 4%;
+}
+.silder1 .img-box img{
+	width: 84%;
+	position: absolute;
+	left: 8%;top: 8%;
+}
+.silder1 #rot1{
+	width: 54%;
+	left: 22%;
+	top: 18%;
+	animation: rot 2s linear infinite;
+}
+@-webkit-keyframes rot{
+	from{transform:rotateZ(0);}
+	to{transform: rotateZ(360deg);}
+}
+.silder1 .car1{
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+.silder2{
+	background: url(../img/twoback.png);
+	background-size: 100% 100%;
+	text-align: center;
+}
+.silder2 img{
+	width: 75%;
+	margin-top: 30%;
+}
+.silder3{
+	background: url(../img/twopic2.png);
+	background-size: 100% 100%;
+}
+.silder3 .img-box img{
+	position: absolute;
+	width: 34%;
+    left: 8%;
+    top: 7%;
+}
+.silder3 #rot2{
+	animation: rot 2s linear infinite;
+}
+.silder3 .text{
+	width: 40%;height: 6%;
+	font-size: 0.5rem;
+	font-family: "微软雅黑";
+	position: absolute;
+	line-height: 0.8rem;
+	border-bottom: 2px solid #000;
+}
+.silder3 .text1{
+	left: 46%;top: 11%;
+}
+.silder3 .text2{
+	left: 25%;top: 21%;
+}
+.silder3 .text3{
+	left: 8%;top: 31%;
+}
+.silder3 .shou,.silder5 .shou{
+	width: 10%;
+	position: absolute;
+	left: 60%;top: 15%;
+	animation: shou 0.5s linear infinite;
+}
+@-webkit-keyframes shou{
+	from{left: 60%;top: 15%;}
+	to{left: 58%;top: 13%;}
+}
+.silder3 .car-big{
+	background: url(../img/bigcar.png);
+	background-size: 100% 100%;
+	width: 250%;
+	height: 93%;
+	position: absolute;
+	z-index: -5;
+	left: -30%;top: 20%;
+}
+.silder3 .car-big .deng{
+	background: url(../img/bigcarlight.png);
+	background-size: 100% 100%;
+	width: 28%;
+    height: 47%;
+    position: absolute;
+    left: 11%;
+    top: 42%;
+}
+.silder4{
+	background-color: #000;
+	text-align: center;
+}
+.silder4>p{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 5%;
+	font-size: 0.6rem;
+	line-height: 0.6rem;
+	color: #fff;
+}
+.silder4 .car-box img{
+	width: 90%;
+	position: absolute;
+	left: 5%;top: 13%;
+	display: none;
+}
+.silder4 .car-box img:first-child{
+	display: block;
+}
+.silder4 .car-col{
+	width: 100%;
+	position: absolute;
+	left: 0%;top: 70%;
+}
+.silder4 .car-col img{
+	display: inline-block;
+	width: 16%;
+}
+.silder5,.silder6{
+	background: url(../img/threepic1.png);
+	background-size: 100% 100%;
+	text-align: center;
+}
+.silder5 .car-bgtop{
+	width: 200%;
+	position: absolute;
+	left: 0;
+	top: -15%;
+	z-index: -1;
+}
+.silder5 .car-bgbtm,.silder6 .car-bgbtm{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.silder5 .car-air .air1{
+	width: 60%;
+	margin: 20% 0 5% -20%;
+}
+.silder5 .car-air .air2{
+	width: 80%;
+}
+.silder5 .car-neishi img{
+	display: none;
+	width: 90%;
+	position: absolute;
+	left: 5%;
+}
+.silder5 .car-neishi img:nth-of-type(1){
+	top: 20%;
+}
+.silder5 .car-neishi img:nth-of-type(2){
+	top: 52%;
+}
+.silder5 .car-neishi img:nth-of-type(3){
+	top: 5%;
+}
+.silder5 .car-neishi img:nth-of-type(4){
+	top: 56%;
+}
+.silder6 .back{
+	width: 100%;height: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+.silder6 .click-circle img,.silder6 .click-text{
+	width: 40%;
+	position: absolute;
+	left: 30%;
+	top:30%;
+}
+.silder6 #cir img{
+	animation: rot 2s linear infinite;
+}
+.silder6 #tbig{
+	height: 23%;
+	line-height: 3rem;
+	font-family: "kaiti";
+	animation: bbig 1.5s linear infinite;
+}
+@-webkit-keyframes bbig{
+	from{font-size: 0.3rem;}
+	to{font-size: 1rem;}
+}
+.silder7{
+	background-color: #000;
+}
+.silder7 img{
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+.silder7 .incar{
+	top: 0;
+	height: 75%;
+}
+.silder7 .vido{
+	bottom:0;
+	height: 25%;
+	width: 65%;
+}
+.silder7 .shou{
+	width: 10%;
+	position: absolute;
+	left: 35%;top: 90%;
+	animation: shou1 0.5s linear infinite;
+}
+@-webkit-keyframes shou1{
+	from{left: 35%;top: 90%;}
+	to{left: 33%;top: 88%;}
+}
+.silder8{
+	background: url(../img/sixpic1s.png);
+	background-size: 100% 100%;
+}
+.silder8 img{
+	position: absolute;
+}
+.silder8 img:nth-of-type(1){
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.silder8 img:nth-of-type(2){
+	top: 0;left: 0;
+	width: 100%;
+}
+.silder8 img:nth-of-type(3){
+	top: 38%;width: 88%;left: 0;
+}
+.silder8 img:nth-of-type(4){
+	top: 56%;width: 100%;left: 0;z-index: -1;
+}
+.silder9{
+	background-color: #000;
+	text-align: center;
+}
+.silder9 img{
+	float: left;
+	width: 100%;
+	height: 33.33%;
+}
+.silder10{
+	background: url(../img/eightbc.png);
+	background-size: 100% 100%;
+	text-align: center;
+}
+.silder10 .try{
+	width: 60%;
+	margin:25% 0  5% 20%;
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+	font-family: "微软雅黑";
+}
+.silder10 .try-form{
+	margin-left: 10%;
+	width: 80%;
+	font-family: "微软雅黑";
+	font-size: 0.35rem;
+}
+.silder10 .try-form input{
+	margin-top: 0.1rem;
+	width: 79%;
+	height: 0.5rem;
+}
+#btn{
+	display: block;
+    height: 0.65rem;
+    width: 79%;
+    background-color: #ff6600;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 0.36rem;
+    border: none;
+    outline: none;
+    border-radius: 0.10rem;
+    margin-left: 17%;
+    margin-top: 6%;
+}
