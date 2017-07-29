@@ -3,7 +3,6 @@ var flag1=true,flag2=true,flag3=true,flag4=true,flag5=true,flag6=true;
 var mySwiper=new Swiper(".swiper-container",{
 		initialSlide : 0,
 	 	direction : 'vertical',
-	 	mousewheelControl:true,
 	 	autoplayDisableOnInteraction:false,
 	 	grabCursor : true,
 	    onInit: function(swiper){ 
@@ -43,8 +42,6 @@ var mySwiper=new Swiper(".swiper-container",{
 	        }
 	    }
 });
-
-
 $(".light").click(function(){
 	if (flag1) {
 	    $(".biglight").css("display","block");
